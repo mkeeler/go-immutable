@@ -187,7 +187,7 @@ func Reverse[S ~[]E, E any](s S) S {
 	return newS
 }
 
-// Sort is an immutable variant of the standard libraires slices.Sort function. It is
+// Sort is an immutable variant of the standard libraries slices.Sort function. It is
 // a small wrapper which will clone the slice and then sort it to ensure that the original
 // is not modified.
 func Sort[S ~[]E, E cmp.Ordered](s S) S {
@@ -199,7 +199,7 @@ func Sort[S ~[]E, E cmp.Ordered](s S) S {
 	return newS
 }
 
-// SortFunc is an immutable variant of the standard libraires slices.SortFunc function. It is
+// SortFunc is an immutable variant of the standard libraries slices.SortFunc function. It is
 // a small wrapper which will clone the slice and then sort it to ensure that the original
 // is not modified.
 func SortFunc[S ~[]E, E any](s S, cmp func(a, b E) int) S {
@@ -211,7 +211,7 @@ func SortFunc[S ~[]E, E any](s S, cmp func(a, b E) int) S {
 	return newS
 }
 
-// SortStableFunc is an immutable variant of the standard libraires slices.SortStableFunc function. It is
+// SortStableFunc is an immutable variant of the standard libraries slices.SortStableFunc function. It is
 // a small wrapper which will clone the slice and then sort it to ensure that the original
 // is not modified.
 func SortStableFunc[S ~[]E, E any](s S, cmp func(a, b E) int) S {
