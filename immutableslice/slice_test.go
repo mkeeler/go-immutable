@@ -272,7 +272,7 @@ func TestDelete(t *testing.T) {
 				require.Equal(t, tcase.expected, actual)
 
 				// check the immutability of the input slice.
-				actual = append(actual, 1, 2, 3)
+				_ = append(actual, 1, 2, 3)
 				require.Equal(t, original, tcase.slice)
 			}
 
